@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <label>Select an Algorithm:</label>
+            <select id="options" onchange="onAlgorithmChange()">
+                <option value="1">Bubble Sort</option>
+                <option value="2">Selection Sort</option>
+                <option value="3">Linear Search</option>
+                <option value="4">Binary Search</option>
+            </select>
+        </div>
+        <div>
+            <label>Array Size</label>
+            <input type="number" id="array-size" onchange="sizeChange()" value="5">
+        </div>
+        <div>
+            <label>Search Element</label>
+            <input type="number" id="search-box" disabled>
+        </div>
+        <div>
+            <button type="button" id="start-button" onclick="start()">Start</button>
+        </div>
+    </div>
+    <div id="main" class="main"></div>
+    <div id="element"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
